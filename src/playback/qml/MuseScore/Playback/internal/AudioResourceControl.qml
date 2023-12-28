@@ -297,7 +297,7 @@ Item {
                     states: [
                         State {
                             name: "PRESSED"
-                            when: menuButton.mouseArea.pressed || menuLoader.isMenuOpened
+                            when: menuButton.mouseArea.pressed // || menuLoader.isMenuOpened
 
                             PropertyChanges {
                                 target: menuButtonBackground
@@ -324,7 +324,7 @@ Item {
                     }
                 }
 
-                StyledMenuLoader {
+                StyledSearchTreeLoader {
                     id: menuLoader
 
                     onHandleMenuItem: function(itemId) {
